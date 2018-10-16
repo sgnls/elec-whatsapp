@@ -1,0 +1,52 @@
+{
+  "name": "elec-whatsapp",
+  "version": "0.0.1",
+  "description": "Electron : WhatsApp",
+  "homepage": "https://github.com/sgnls/elec-whatsapp",
+  "keywords": [
+    "WhatsApp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sgnls/elec-whatsapp.git"
+  },
+  "author": "Matt Hill <desk@sgnls.net>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "start": "electron ./app",
+    "start-debug": "WEB_DEBUG=1 electron --disable-http-cache ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^13.11.1"
+  },
+  "build": {
+    "appId": "elec-whatsapp",
+    "asar": false,
+    "linux": {
+      "category": "Network;Chat",
+      "packageCategory": "net",
+      "executableName": "whatsapp",
+      "synopsis": "WhatsApp (Electron)",
+      "description": "WhatsApp for Linux via Electron.",
+      "desktop": {
+        "Name": "WhatsApp",
+        "Comment": "WhatsApp for Linux via Electron.",
+        "StartupWMClass": "whatsapp"
+      },
+      "target": [
+        "tar.gz",
+        "deb",
+        "rpm",
+        "pacman"
+      ]
+    }
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/sgnls/elec-whatsapp/issues"
+  },
+  "main": "index.js"
+}

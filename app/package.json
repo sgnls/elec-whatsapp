@@ -1,0 +1,10 @@
+{
+  "name": "elec-whatsapp",
+  "version": "0.0.1",
+  "description": "Electron : WhatsApp",
+  "main": "lib/index.js",
+  "author": "Matt Hill <desk@sgnls.net>",
+  "dependencies": {
+    "open": "0.0.5"
+  }
+}
